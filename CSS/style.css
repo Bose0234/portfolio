@@ -1,0 +1,142 @@
+/* Font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Font End */
+
+/* Utility Classes */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    font-size: 14px!important;
+    padding: 12px 35px!important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid #365f3c!important;
+    color: #365f3c!important;
+    font-weight: 500!important;
+    border-radius: 0!important;
+    background-color: transparent !important;
+}
+
+button:hover {
+    background-color: #365f3c!important;
+    border: 2px solid transparent!important;
+    color: #fff!important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Utility Classes End */
+
+/* Header */
+
+header li.nav-item a.nav-link {
+    padding: 0 !important;
+    margin: 0 0 0 35px !important;
+    color: #365f3c !important;
+    position: relative;
+}
+
+header li.nav-item:first-child a.nav-link {
+    margin-left: 0 !important;
+}
+
+a.navbar-brand {
+    margin-right: 35px;
+}
+
+header li.nav-item a.nav-link::before {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    border-bottom: 1px solid #000;
+    content: "";
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+header li.nav-item a.nav-link:hover::before  {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+
+header nav.navbar {
+    padding: 10px 0;
+    background-color: #fffdf0;
+}
+
+header .container {
+    padding: 0;
+}
+
+.cnt-txt img:first-child{
+    margin: 0 10px;
+}
+
+/* Header End */
+
+/* Banner */
+
+.banner {
+    padding: 100px 0 200px 0;
+    background-color: #fffdf0;
+}
+
+.banner h1 {
+    font-size: 80px;
+    font-weight: 300;
+    color: #365f3c;
+    line-height: 84px;
+    margin-bottom: 25px;
+}
+
+.banner p {
+    position: relative;
+    line-height: 25px;
+    padding-left: 15px;
+    margin-bottom: 35px;
+}
+
+.banner p::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 5px solid #365f3c;
+    content: "";
+    height: 100%;
+}
+
+/* Banner End */
+
+/* Icons */
+
+.icons .row {
+    background-color: #fffdf0;
+    padding: 40px;
+    margin-top: -80px;
+    box-shadow: 0 0 10px #365f3c36;
+    border-radius: 15px;
+}
+
+/* Icons End */
+
+/* Projects */
+
+
+
+/* Projects End */
