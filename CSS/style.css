@@ -29,6 +29,7 @@ button {
     font-weight: 500!important;
     border-radius: 0!important;
     background-color: transparent !important;
+    border-radius: 5px!important;
 }
 
 button:hover {
@@ -36,6 +37,26 @@ button:hover {
     border: 2px solid transparent!important;
     color: #fff!important;
     transition: all 0.3s ease-in-out;
+}
+
+h2 {
+    color: #fffdf0;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+h2 span {
+    position: relative;
+}
+
+h2 span::before {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-bottom: 5px solid #fffdf0;
+    display: inline-block !important;
+    width: 100%;
+    content: "";
 }
 
 /* Utility Classes End */
@@ -93,7 +114,7 @@ header .container {
 /* Banner */
 
 .banner {
-    padding: 100px 0 200px 0;
+    padding: 100px 0 0 0;
     background-color: #fffdf0;
 }
 
@@ -125,18 +146,126 @@ header .container {
 
 /* Icons */
 
+.icons {
+    background-color: #fffdf0;
+}
+
 .icons .row {
     background-color: #fffdf0;
     padding: 40px;
-    margin-top: -80px;
     box-shadow: 0 0 10px #365f3c36;
-    border-radius: 15px;
+    border-radius: 10px;
+    position: relative;
+    top: 75px;
+}
+
+.split-mark {
+    border-right: 1px solid #365f3c;
 }
 
 /* Icons End */
 
 /* Projects */
 
+.projects {
+    padding: 200px 0;
+    background-color: #365f3c;
+}
 
+.projects h2 {
+    margin-bottom: 50px;
+}
+
+.projects h3 {
+    color: #fffdf0;
+}
+
+.projects p {
+    color: #fffdf0;
+    margin: 25px 0;
+}
+
+.projects button {
+    font-size: 14px!important;
+    padding: 12px 35px!important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid #fffdf0!important;
+    color: #fffdf0!important;
+    font-weight: 500!important;
+    border-radius: 0!important;
+    background-color: transparent !important;
+    border-radius: 5px!important;
+}
+
+.projects button:hover {
+    background-color: #fffdf0!important;
+    border: 2px solid transparent!important;
+    color: #365f3c!important;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-1 {
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.project-1::before {
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    background: url(../Images/Polygon_1.png);
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 45%;
+    transform: rotate(-25deg);
+    z-index: -1;
+}
+
+.project-2 {
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.project-2::before {
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    background: url(../Images/Rectangle_1.png);
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 45%;
+    transform: rotate(25deg);
+    z-index: -1;
+}
+
+.project-3 {
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.project-3::before {
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    background: url(../Images/Ellipse_1.png);
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 45%;
+    transform: rotate(25deg);
+    z-index: -1;
+}
 
 /* Projects End */
