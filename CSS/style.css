@@ -19,26 +19,6 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
 
-button {
-    font-size: 14px!important;
-    padding: 12px 35px!important;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border: 2px solid #365f3c!important;
-    color: #365f3c!important;
-    font-weight: 500!important;
-    border-radius: 0!important;
-    background-color: transparent !important;
-    border-radius: 5px!important;
-}
-
-button:hover {
-    background-color: #365f3c!important;
-    border: 2px solid transparent!important;
-    color: #fff!important;
-    transition: all 0.3s ease-in-out;
-}
-
 h2 {
     color: #fffdf0;
     font-size: 40px;
@@ -118,6 +98,26 @@ header .container {
     background-color: #fffdf0;
 }
 
+.banner a {
+    font-size: 14px!important;
+    padding: 12px 35px!important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid #365f3c!important;
+    color: #365f3c!important;
+    font-weight: 500!important;
+    border-radius: 0!important;
+    background-color: transparent !important;
+    border-radius: 5px!important;
+}
+
+.banner a:hover {
+    background-color: #365f3c!important;
+    border: 2px solid transparent!important;
+    color: #fff!important;
+    transition: all 0.3s ease-in-out;
+}
+
 .banner h1 {
     font-size: 80px;
     font-weight: 300;
@@ -156,11 +156,16 @@ header .container {
     box-shadow: 0 0 10px #365f3c36;
     border-radius: 10px;
     position: relative;
-    top: 75px;
+    top: 85px;
 }
 
 .split-mark {
     border-right: 1px solid #365f3c;
+}
+
+figcaption {
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
 /* Icons End */
@@ -168,7 +173,7 @@ header .container {
 /* Projects */
 
 .projects {
-    padding: 200px 0;
+    padding: 200px 0 100px 0;
     background-color: #365f3c;
 }
 
@@ -185,7 +190,8 @@ header .container {
     margin: 25px 0;
 }
 
-.projects button {
+.projects a {
+    display: inline-block;
     font-size: 14px!important;
     padding: 12px 35px!important;
     letter-spacing: 2px;
@@ -196,9 +202,11 @@ header .container {
     border-radius: 0!important;
     background-color: transparent !important;
     border-radius: 5px!important;
+    text-decoration: none!important;
+    margin-top: 10px!important;
 }
 
-.projects button:hover {
+.projects a:hover {
     background-color: #fffdf0!important;
     border: 2px solid transparent!important;
     color: #365f3c!important;
@@ -268,4 +276,49 @@ header .container {
     z-index: -1;
 }
 
+.prjct-img {
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+}
+
+.prjct-img img {
+    width: 600px;
+}
+
+.prjct-1 .prjct-img img {
+    transform: translateY(0);
+    transition: all 5s ease-in-out;
+}
+
+.prjct-1 .prjct-img:hover img {
+    transform: translateY(-1575px);
+}
+
+.prjct-2 .prjct-img img {
+    transform: translateY(0);
+    transition: all 5s ease-in-out;
+}
+
+.prjct-2 .prjct-img:hover img {
+    transform: translateY(-1420px);
+}
+
+.prjct-3 .prjct-img img {
+    transform: translateY(0);
+    transition: all 5s ease-in-out;
+}
+
+.prjct-3 .prjct-img:hover img {
+    transform: translateY(-1488px);
+}
+
 /* Projects End */
+
+/* Expertise */
+
+.expertise {
+    padding: 100px 0;
+}
+
+/* Expertise End*/
