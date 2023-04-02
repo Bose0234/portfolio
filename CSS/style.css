@@ -280,6 +280,7 @@ figcaption {
     overflow: hidden;
     width: 600px;
     height: 400px;
+    border-radius: 5px;
 }
 
 .prjct-img img {
@@ -319,6 +320,51 @@ figcaption {
 
 .expertise {
     padding: 100px 0;
+    background-color: #fffdf0;
+}
+
+.expertise h2 {
+    color: #365f3c;
+    margin-bottom: 55px;
+}
+
+.expertise h2 span::before {
+    border-bottom: 5px solid #365f3c;
+}
+
+.expertise label {
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+progress[value] {
+    appearance: none;
+    width: 100%;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #fffdf0;
+    border: 1px solid #365f3c;
+    border-radius: 5px;
+}
+
+.skills-list ul {
+    padding: 0;
+}
+
+.skills-list ul li {
+    list-style: none;
+    margin-bottom: 35px;
+    padding: 20px;
+    width: 90%;
+    background-color: #365f3c;
+    color: #fffdf0;
+    font-size: 22px;
+}
+
+.skills-list ul li img {
+    filter: invert(1);
 }
 
 /* Expertise End*/
